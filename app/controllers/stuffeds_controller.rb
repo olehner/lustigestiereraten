@@ -1,0 +1,2 @@
+class StuffedsController < ApplicationController
+end
