@@ -2,10 +2,13 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <%= cl_image_tag @dog.photo, width: 600, margin: 40 %>
+        <%= cl_image_tag @dog.photo, width: 700 %>
       </div>
-      <div class="col-xs-12 padded">
-      <a href="#" id="solution-button" data-lat="<%= @dog.name %>" class="btn-treehouse">Zeige Lösung</a>
+      <div class="col-xs-offset-3 col-xs-3 padded">
+        <a href="#" id="solution-button" data-lat="<%= @dog.name %>" class="btn-treehouse">Zeige Lösung</a>
+      </div>
+      <div class="col-xs-3 padded">
+        <a href="./show" id="solution-button" class="btn-refresh">Neuer Hund!</a>
       </div>
     </div>
   </div>

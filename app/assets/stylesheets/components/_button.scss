@@ -20,6 +20,16 @@
   background: #6AD58B;
   transition: background 0.3s ease;
 }
+
+.btn-refresh {
+  color: black;
+  padding: 10px 15px;
+  margin: 50px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: lightblue;
+  transition: background 0.3s ease;
+}
 .btn-treehouse:hover {
   opacity: 1;
   background: #3ac162;
