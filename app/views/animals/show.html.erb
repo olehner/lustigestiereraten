@@ -1,2 +1,15 @@
-<h1>Animals#show</h1>
-<p>Find me in app/views/animals/show.html.erb</p>
+<div class="text-center padded">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <%= cl_image_tag @animal.photo, width: 700 %>
+      </div>
+      <div class="col-xs-offset-3 col-xs-3 padded">
+        <a href="#" id="solution-button" data-lat="<%= @animal.name %>" class="btn-treehouse">Zeige Lösung</a>
+      </div>
+      <div class="col-xs-3 padded">
+        <a href="./show" id="solution-button" class="btn-refresh">Neues Präparat!</a>
+      </div>
+    </div>
+  </div>
+</div>
