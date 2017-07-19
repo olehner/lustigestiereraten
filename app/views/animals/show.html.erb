@@ -1,3 +1,5 @@
+<% if user_signed_in? %>
+
 <div class="text-center padded">
   <div class="container">
     <div class="row">
@@ -13,3 +15,16 @@
     </div>
   </div>
 </div>
+
+
+<% else %>
+<div class="text-center padded">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <%= link_to t(".sign_in", default: "Bitte anmelden!"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>      
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
