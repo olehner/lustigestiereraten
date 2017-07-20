@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   resources :dogs
   resources :questions
   resources :stuffed
+  resources :animals
+
+  resources :birds
 
   # get 'dogs/random'
 

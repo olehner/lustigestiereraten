@@ -1,0 +1,29 @@
+<% if user_signed_in? %>
+
+<div class="text-center padded">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 > <%= @bird.name %> </h2>
+      </div>
+      <div class="col-xs-offset-3 col-xs-3 padded">
+        <a href="#" id="solution-button" data-lat="<%= @bird.type.name %>" class="btn-treehouse">Zeige Lösung</a>
+      </div>
+      <div class="col-xs-3 padded">
+        <a href="./show" id="solution-button" class="btn-refresh">Neuer Vogel!</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% else %>
+<div class="text-center padded">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <%= link_to t(".sign_in", default: "Bitte anmelden!"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>      
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
